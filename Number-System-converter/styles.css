@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on the container */
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* Heading */
+h1 {
+    color: #2c3e50;
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Converter Section */
+.converter {
+    margin-top: 20px;
+}
+
+.input-section, .select-section {
+    margin: 20px 0;
+}
+
+/* Input field styling */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+/* Input focus effect */
+input[type="text"]:focus, select:focus {
+    border-color: #ee290f;
+    background-color: #e8f6ff;
+}
+
+/* Button Styling */
+button {
+    background-color: #099ee2;
+    color: rgb(241, 237, 13);
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover effect */
+button:hover {
+    background-color: #f83c0c;
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Output Section Styling */
+.output-section {
+    margin-top: 30px;
+    background-color: #099ee2;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+.output-section h2 {
+    font-size: 1.4em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.output-section p {
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"], select, button {
+        font-size: 1em;
+    }
+
+    .output-section p {
+        font-size: 1.2em;
+    }
+}
